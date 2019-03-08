@@ -9,3 +9,4 @@ Sensors: Soil sensor (3 pieces) | Ultrasonic sensor (HCSR04) (1 piece)
 Actuator: DC Water Pump (3 pieces)
 
 The I2C protocol is involved in this project to send analog sensors data from Arduno Uno to NodeMcu ESP8266.
+https://github.com/kabir1995/IoT-driven-in-House-Watering-System/raw/master/Block%20diagram.jpg

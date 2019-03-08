@@ -3,13 +3,10 @@
 #include <Wire.h>
 #include <ESP8266WiFi.h>
 #include <FirebaseArduino.h>
-#define FIREBASE_HOST "garden-76f68.firebaseio.com"
-#define FIREBASE_AUTH "cPHFyMVFD3lDu18164FU5mt1tGiqnLffHG3Msfb4"
-//#define WIFI_SSID "UniMAP-WIFI-PFI2-KAFE"
-#define WIFI_SSID "Chun Tatt's iPhone"
-#define WIFI_PASSWORD "12345678"
-//#define WIFI_SSID "HOME"
-//#define WIFI_PASSWORD "abcd12345"
+#define FIREBASE_HOST "xxxxxxx.firebaseio.com"
+#define FIREBASE_AUTH "token_or_secret"
+#define WIFI_SSID "HOME"
+#define WIFI_PASSWORD "abcd12345"
 int table[]={0,0,0};
 int x1,x2,x3;
 int val;
@@ -124,13 +121,8 @@ void ultra(){
                                     
         else   {
                     Firebase.setString("WATER Tank/Ultrasonic Sensor Status","Enough Water"); 
-                   // Firebase.setInt("WATER_PUMP/PUMP3",1);
                     Serial.println("Enough Water------");
-                    //delay(5000);
-                    //Firebase.setInt("WATER_PUMP/PUMP3",0);
-                    //Serial.println("Stop Pumping");
-                    //return;
-                  
+
                   }
   
               }
@@ -152,19 +144,6 @@ void loop()
      soil1();
      soil2();
      ultra();
-//
-//          Serial.println(x4);
-//            val = x4;
-//            float mv = ( val/1024.0)*5000; 
-//            float cel = mv/10;
-//            //float farh = (cel*9)/5 + 32;
-//            
-//            Firebase.setFloat("Temp_sensor/TEMPERATURE",cel);
-//            
-//            Serial.print("TEMPRATURE = ");
-//            Serial.print(cel);
-//            Serial.print("*C");
-//            Serial.println();
                          
 
                    Firebase.setFloat("Plant 1/Soil Sensor Moisture Level",x1);

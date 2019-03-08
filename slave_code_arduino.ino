@@ -39,17 +39,15 @@ void loop()
 }
 
 
-                      void requestEvent()
-                       {
-                          uint8_t Buffer[3];
-                          Buffer[0]=table[0];
-                          Buffer[1]=table[1];
-                          Buffer[2]=table[2];
-                          
-                          
-                          Wire.write(Buffer,3); 
+    void requestEvent()
+     {
+       uint8_t Buffer[3];
+       Buffer[0]=table[0];
+       Buffer[1]=table[1];
+       Buffer[2]=table[2];
+       Wire.write(Buffer,3); 
                          
-                        }
+       }
 
 
   

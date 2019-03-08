@@ -146,15 +146,15 @@ void loop()
      ultra();
                          
 
-                   Firebase.setFloat("Plant 1/Soil Sensor Moisture Level",x1);
-                   Serial.print("Soil_Sensor1/Level: ");
-                   Serial.println(x1);
-                   Firebase.setFloat("Plant 2/Soil Sensor Moisture Level",x2);
-                   Serial.print("Soil_Sensor2/Level: ");
-                   Serial.println(x2);
-                   Firebase.setFloat("WATER Tank/Distance from Water Surface",x3);
-                   Serial.print("Sensor_Data/Ultrasonic_Sensor: ");
-                   Serial.println(x3);
+        Firebase.setFloat("Plant 1/Soil Sensor Moisture Level",x1);
+        Serial.print("Soil_Sensor1/Level: ");
+        Serial.println(x1);
+        Firebase.setFloat("Plant 2/Soil Sensor Moisture Level",x2);
+        Serial.print("Soil_Sensor2/Level: ");
+        Serial.println(x2);
+        Firebase.setFloat("WATER Tank/Distance from Water Surface",x3);
+        Serial.print("Sensor_Data/Ultrasonic_Sensor: ");
+        Serial.println(x3);
 x = Firebase.getInt("Plant 1/Water PUMP");
 n = Firebase.getInt("Plant 2/Water PUMP");
 y = Firebase.getInt("WATER Tank/Water PUMP"); 

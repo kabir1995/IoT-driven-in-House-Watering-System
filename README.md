@@ -1,12 +1,32 @@
-# IoT-driven-in-House-Watering-System
-Arduino| NodeMcu ESP8266| I2C | Master-slave| IoT
-This project is an improvement of the conventional method of house garden watering system to the IoT driven in house garden watering system. The development of the system is divided into software and hardware implementation and it will cover these areas: -Arduino Uno Board, Node MCU ESP8266 and The Arduino programming language -The sensor system -The output system
+# IoT-Driven In-House Watering System 🌱💧
+Technologies: Arduino | NodeMCU ESP8266 | I2C Protocol | Master-Slave Architecture | Firebase | IoT
 
-In this project " firebase realtime database " is used as IoT platform.
+This project enhances traditional home garden watering systems by integrating IoT functionality. It combines both hardware and software components to create a smart, automated watering solution that is efficient, scalable, and remotely manageable.
 
-Sensors: Soil sensor (3 pieces) | Ultrasonic sensor (HCSR04) (1 piece)
+🔧 System Overview
+The system is built using:
 
-Actuator: DC Water Pump (3 pieces)
+Microcontrollers: Arduino Uno (Sensor Node) & NodeMCU ESP8266 (Wi-Fi Master Node)
 
-The I2C protocol is involved in this project to send analog sensors data from Arduno Uno to NodeMcu ESP8266.
+Communication Protocol: I2C (for master-slave communication between Arduino and NodeMCU)
+
+IoT Platform: Firebase Realtime Database (for remote monitoring and control)
+
+🌿 Sensors & Actuators
+Soil Moisture Sensors: 3 units (to monitor soil conditions in different zones)
+
+Ultrasonic Sensor (HC-SR04): 1 unit (to monitor water tank level)
+
+DC Water Pumps: 3 units (each controlled independently based on sensor data)
+
+📡 How It Works
+Arduino collects data from soil and ultrasonic sensors.
+
+Data is transmitted via I2C to NodeMCU.
+
+NodeMCU uploads the data to Firebase and receives control signals.
+
+Based on real-time data, water pumps are activated to irrigate specific zones.
+
+🖼️ System Architecture
 https://github.com/kabir1995/IoT-driven-in-House-Watering-System/raw/master/Block%20diagram.jpg
